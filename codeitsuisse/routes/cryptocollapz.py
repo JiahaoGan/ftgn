@@ -39,9 +39,10 @@ def calc(ii,dp):
     mp=set()
 
     while (i not in mp):
-        if (dp[i]!=0):
-            mp.add(dp[i])
-            break;
+        if (i < 1000000):
+            if (dp[i] != 0):
+                mp.add(dp[i])
+                break;
         mp.add(i)
 
         if (i%2==1):
